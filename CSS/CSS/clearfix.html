@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      div {
+        border: 3px solid #4caf50;
+        padding: 5px;
+      }
+
+      .img1 {
+        float: right;
+      }
+
+      .img2 {
+        float: right;
+      }
+
+      .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Without using clearfix</h1>
+
+    <div>
+      <img
+        class="img1"
+        src="file:///Users/saksham/Downloads/IMG20230906194536.jpg"
+        alt="coaching pic"
+        width="170"
+        height="170">
+      My name is Saksham Ojha.I live in Patna.
+    </div>
+
+    <h1 style="clear: right">Using clearfix property</h1>
+
+    <div class="clearfix">
+      <img class="img2"
+      src="file:///Users/saksham/Downloads/IMG20230906194536.jpg" alt="Coaching
+      pic" width="170" height="170">
+      My name is Saksham Ojha.I live in Patna.
+    </div>
+  </body>
+</html>
